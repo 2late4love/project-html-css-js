@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(../assets/beachshowcase.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+    h1 {
+        color: #926239;
+        padding: 40vh 0 12px 0;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    #header-par, a {
+        color: #926239;
+        font-size: 1.5em;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .button {
+        padding: 20px;
+        margin: 40px auto;
+        width: 130px;
+        border: 1px solid #926239;
+        border-radius: 10px;
+    }
+
+p {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+
+section {
+    text-align: center;
+}
+
+.brown {
+    background-color: #926239;
+    color: #f4f4f4;
+}
+
+.milk {
+    background-color: #f4f4f4;
+    color: #926239;
+}
+
+.inline {
+    display: inline-block;
+    width: 30.41%;
+}
+
+
+
+
+/* Золотистий колір #926239;
+Білий #f4f4f4; */
