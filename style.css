@@ -1,69 +1,93 @@
-* {
-    box-sizing: border-box;
-}
+/* h2, p, button, section, header, main {
+    border: 1px solid rgba(102, 102, 102, 0.363);
+} */
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main {
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.541);
-}
-
-.usercard {
+    width: 100%;
+    padding: 4em;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 500px;
-    border: 3px solid white;
-    border-radius: 8px;
-    background-color: white;
-    overflow: hidden ;
-}
+} 
 
-.head-background {
-    height: 250px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./assets/1669238520_2-pibig-info-p-krasivii-vid-oboi-2.jpg);
-}
-
-.man {
-    border: 4px solid white;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-position: top;
-    background-size: 130%;
-    background-repeat: no-repeat;
-    background-image: url(./assets/Outdoors-man-portrait_\(cropped\).jpg);
-    margin-bottom: 0.4em;
-    margin-top: -3em;
-}
-
-.name {
-    font-weight: 800;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    margin: 0.4em 0;
-}
-
-.about {
+.header {
     text-align: center;
-    font-size: 1em;
-    width: 70%;
-    color: grey;
-    margin-bottom: 1.8em;
 }
 
-svg {
-    fill: grey;
-    height: 50%;
+.main-name {
+    font-size: 2.4rem;
+    margin: 0 0 1.4rem 0;
+}
+
+.main-par {
+    padding: 0 0 2rem 0;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+}
+
+.type-plan {
+    text-align: center;
+    margin: 0 0.4rem;
+}
+
+.type-plan:hover .name-plan {
+    background-color: rgb(102, 102, 102);
+}
+
+.name-plan {
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.6rem 10rem;
+}
+
+.type-par {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.type-par:not(.grey-par), .button-block, .tt {
+    border: 1px solid rgba(102, 102, 102, 0.363);
+    margin: -1px;
+}
+
+.grey-par {
+    color: rgb(102, 102, 102);
+}
+
+.button-block {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem 0;
+}
+
+.button {
+    padding: 0.6rem 2rem;
+    background-color: rgb(0, 158, 138);
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(39, 177, 158);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(0, 158, 138);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.price {
+    padding: 1rem 0 0 0;
+    font-size: 2.4rem;
 }
