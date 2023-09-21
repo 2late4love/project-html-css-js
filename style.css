@@ -1,23 +1,67 @@
 .container {
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    /* justify-content: flex-start;
+    border: 1px solid black;
+    height: 600px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
     justify-content: flex-end;
-    justify-content: stretch; */
-    align-items: center;
-    /* align-items: flex-start;
-    align-items: flex-end;
-    align-items: stretch; */
-    flex-direction: row;
-    /* flex-direction: row-reverse;
-    flex-direction: column;
-    flex-direction: column-reverse; */
+    align-content: flex-start;
 }
 
 .box {
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
     background-color: grey;
+    text-align: center;
 }
+
+
+        /* AXIS POSITION */
+    /* flex-direction: row; - STANDART */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+
+        /* ELEMENTS POSITION ON THE MAIN AXIS*/
+    /* justify-content: flex-start; - STANDART */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: stretch; */
+        /* Растягивание элемента */
+
+    /* justify-content: space-around; */
+        /* Равномерные отступы вокруг каждого элемента */
+    /* justify-content: space-between; */
+        /* Равномерные отступы между элементами, первый всегда вначале с краю, последний вконце с краю */
+    /* justify-content: space-evenly; */
+        /* Равномерные отступы между элементами, и от краев родительского элемента */
+    
+
+        /* ELEMENTS POSITION ON THE SECONDARY AXIS */
+    /* align-items: flex-start; - STANDART */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+        /* Растягивание элемента */
+
+    
+
+        /* ELEMENTS OVER ROW */
+    /* flex-wrap: nowrap; - STANDART */
+    /* flex-wrap: wrap; - если контент не влезает, он переносится на следующую строку (деля контейнер на равные части!!!) */
+    /* flex-wrap: wrap-reverse; */
+
+
+        /* ELEMENTS POSITION WHEN OVER ROW */
+    /* align-content: stretch; - STANDART */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    /* align-content: flex-end; */
+
+
+        /* ABBREVIETION */
+    /* flex-flow: row wrap;
+            flex-direction: row;
+            flex-wrap: wrap; */
