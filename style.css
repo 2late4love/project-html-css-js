@@ -1,67 +1,69 @@
-.container {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section {
     display: flex;
-    border: 1px solid black;
-    height: 600px;
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
 }
 
-.box {
-    width: 80px;
-    height: 80px;
-    border: 1px solid red;
-    background-color: grey;
+.usercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden ;
+}
+
+.head-background {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./assets/1669238520_2-pibig-info-p-krasivii-vid-oboi-2.jpg);
+}
+
+.man {
+    border: 4px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: top;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-image: url(./assets/Outdoors-man-portrait_\(cropped\).jpg);
+    margin-bottom: 0.4em;
+    margin-top: -3em;
+}
+
+.name {
+    font-weight: 800;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin: 0.4em 0;
+}
+
+.about {
     text-align: center;
+    font-size: 1em;
+    width: 70%;
+    color: grey;
+    margin-bottom: 1.8em;
 }
 
-
-        /* AXIS POSITION */
-    /* flex-direction: row; - STANDART */
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-
-
-        /* ELEMENTS POSITION ON THE MAIN AXIS*/
-    /* justify-content: flex-start; - STANDART */
-    /* justify-content: center; */
-    /* justify-content: flex-end; */
-    /* justify-content: stretch; */
-        /* Растягивание элемента */
-
-    /* justify-content: space-around; */
-        /* Равномерные отступы вокруг каждого элемента */
-    /* justify-content: space-between; */
-        /* Равномерные отступы между элементами, первый всегда вначале с краю, последний вконце с краю */
-    /* justify-content: space-evenly; */
-        /* Равномерные отступы между элементами, и от краев родительского элемента */
-    
-
-        /* ELEMENTS POSITION ON THE SECONDARY AXIS */
-    /* align-items: flex-start; - STANDART */
-    /* align-items: center; */
-    /* align-items: flex-end; */
-    /* align-items: stretch; */
-        /* Растягивание элемента */
-
-    
-
-        /* ELEMENTS OVER ROW */
-    /* flex-wrap: nowrap; - STANDART */
-    /* flex-wrap: wrap; - если контент не влезает, он переносится на следующую строку (деля контейнер на равные части!!!) */
-    /* flex-wrap: wrap-reverse; */
-
-
-        /* ELEMENTS POSITION WHEN OVER ROW */
-    /* align-content: stretch; - STANDART */
-    /* align-content: flex-start; */
-    /* align-content: center; */
-    /* align-content: flex-end; */
-
-
-        /* ABBREVIETION */
-    /* flex-flow: row wrap;
-            flex-direction: row;
-            flex-wrap: wrap; */
+svg {
+    fill: grey;
+    height: 50%;
+}
