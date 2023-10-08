@@ -1,93 +1,101 @@
-/* h2, p, button, section, header, main {
-    border: 1px solid rgba(102, 102, 102, 0.363);
-} */
+@import url(./reset.css);
+@font-face {
+    font-family: 'Chakra';
+    src: url(./fonts/ChakraPetch-Regular.ttf) format("truetype");
+}
 
-.main {
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: 'Chakra';
     height: 100vh;
     width: 100%;
-    padding: 4em;
-    box-sizing: border-box;
+    background-image: url(./assets/Forrest-trees-background-patternpictures-2816-1500x947.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    background-blend-mode: multiply;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
-
-.header {
-    text-align: center;
 }
 
-.main-name {
-    font-size: 2.4rem;
-    margin: 0 0 1.4rem 0;
-}
-
-.main-par {
-    padding: 0 0 2rem 0;
-}
-
-.types {
+.form-sign {
+    border: 1px solid grey;
     display: flex;
-    justify-content: center;
-}
-
-.type-plan {
-    text-align: center;
-    margin: 0 0.4rem;
-}
-
-.type-plan:hover .name-plan {
-    background-color: rgb(102, 102, 102);
-}
-
-.name-plan {
-    background-color: black;
+    flex-direction: column;
+    width: 30vw;
+    /* background-color: rgba(240, 248, 255, 0.301); */
+    backdrop-filter: blur(3px);
     color: white;
-    font-size: 1.4rem;
-    padding: 1.6rem 10rem;
 }
 
-.type-par {
-    padding: 1rem 0;
-    font-size: 0.8rem;
+.form-sign * {
+    margin: 0.5em;
 }
 
-.type-par:not(.grey-par), .button-block, .tt {
-    border: 1px solid rgba(102, 102, 102, 0.363);
-    margin: -1px;
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
 }
 
-.grey-par {
-    color: rgb(102, 102, 102);
+.form-sign h1 {
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
 }
 
-.button-block {
-    background-color: rgb(240, 240, 240);
-    padding: 1rem 0;
+.form-sign label {
+    margin: 0.5em 1em;
+}
+
+.input-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .button {
-    padding: 0.6rem 2rem;
-    background-color: rgb(0, 158, 138);
+    padding: 0.6em 3em;
+    border: 1px solid white;
+    /* background-color: rgb(81, 187, 77); */
+    background-color: transparent;
+    margin: 0.5em 0.5em 1.5em 0.5em;
+    flex-grow: 1;
     color: white;
-    border: none;
 }
 
 .button:hover {
-    background-color: rgb(39, 177, 158);
+    background-color: rgba(240, 248, 255, 0.301);
     cursor: pointer;
 }
 
-.button:active {
-    background-color: rgb(0, 158, 138);
+@media screen and (max-width: 700px) {
+    .form-sign {
+        width: 80vw;
+    }
+
+    .button-flex {
+        flex-direction: column;
+    }
+
+    .input-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
-.bold {
-    font-weight: 800;
-}
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    .form-sign {
+        width: 60vw;
+    }
 
-.price {
-    padding: 1rem 0 0 0;
-    font-size: 2.4rem;
+    .input-flex {
+        justify-content: space-around;
+    }
 }

@@ -3,53 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Homework PRICING</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Input</title>
 </head>
 <body>
-    
-        <main class="main">
-            <header class="header">
-                <h2 class="main-name">PRICING</h2>
-                <p class="main-par">Choose a pricing plan that fits your needs.</p>
-            </header>
-            <section class="types">
-                <div class="type-plan">
-                    <h2 class="name-plan">Basic</h2>
-                    <p class="type-par"><span class="bold">10GB</span> Storage</p>
-                    <p class="type-par"><span class="bold">10</span> Emails</p>
-                    <p class="type-par"><span class="bold">10</span> Domains</p>
-                    <p class="type-par"><span class="bold">Endless</span> Support</p>
-                    <div class="bold price tt">$ 10
-                        <p class="type-par grey-par">per month</p>
-                    </div>
-                    <div class="button-block"><button class="button">&#10003; Sign Up</button></div>
-                </div>
-                <div class="type-plan">
-                    <h2 class="name-plan">Pro</h2>
-                    <p class="type-par"><span class="bold">25GB</span> Storage</p>
-                    <p class="type-par"><span class="bold">25</span> Emails</p>
-                    <p class="type-par"><span class="bold">25</span> Domains</p>
-                    <p class="type-par"><span class="bold">Endless</span> Support</p>
-                    <div class="bold price tt">$ 25
-                        <p class="type-par grey-par">per month</p>
-                    </div>
-                    <div class="button-block"><button class="button">&#10003; Sign Up</button></div>
-                </div>
-                <div class="type-plan">
-                    <h2 class="name-plan">Premium</h2>
-                    <p class="type-par"><span class="bold">50GB</span> Storage</p>
-                    <p class="type-par"><span class="bold">50</span> Emails</p>
-                    <p class="type-par"><span class="bold">50</span> Domains</p>
-                    <p class="type-par"><span class="bold">Endless</span> Support</p>
-                    <div class="bold price tt">$ 10
-                        <p class="type-par grey-par">per month</p>
-                    </div>
-                    <div class="button-block"><button class="button">&#10003; Sign Up</button></div>
-                </div>
-            </section>
-        </main>
+
+    <form action="" class="form-sign">
+        <h1>Sign In</h1>
+        <label for="email" class="input-flex">Your e-mail
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="example@example.com">
+        </label>
+        <label for="password" class="input-flex">Password
+            <input 
+                type="password" 
+                name="pass" 
+                id="password">
+        </label>
+        <div class="button-flex">
+            <button class="button">Sign In</button>
+            <button class="button" type="reset">Reset</button>
+        </div>
+    </form>
 
 </body>
 </html>
